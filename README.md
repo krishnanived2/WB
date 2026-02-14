@@ -1,1 +1,378 @@
-Hi this new one version
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIC Homepage</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* ===== HEADER ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+    flex-wrap:wrap;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-area img{
+    height:40px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.member-btn{
+    background:linear-gradient(90deg,#6C4CF1,#7F5AF0);
+    padding:8px 18px;
+    border-radius:8px;
+    color:white;
+    font-weight:600;
+}
+
+/* ===== HERO ===== */
+.hero{
+    position:relative;
+    text-align:center;
+    padding:100px 20px 70px;
+}
+
+.hero h1{
+    font-size:56px;
+    font-weight:800;
+    color:#111827;
+}
+
+.hero span{
+    color:#6C4CF1;
+}
+
+.hero p{
+    margin-top:25px;
+    font-size:20px;
+    max-width:850px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.6;
+}
+
+.join-btn{
+    margin-top:35px;
+    display:inline-block;
+    background:linear-gradient(90deg,#6C4CF1,#7F5AF0);
+    padding:14px 35px;
+    border-radius:10px;
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+}
+
+/* Floating Icons */
+.float-box{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:white;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.float-left{ top:80px; left:60px; }
+.float-right{ top:100px; right:60px; }
+.float-bottom-left{ top:350px; left:50px; }
+.float-bottom-right{ top:370px; right:60px; }
+
+.float-box img{
+    width:45px;
+}
+
+/* ===== FEATURES ===== */
+.features{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    font-size:20px;
+    font-weight:600;
+    flex-wrap:wrap;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.check{
+    width:30px;
+    height:30px;
+    background:#d1fae5;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#059669;
+    font-weight:bold;
+}
+
+/* ===== BACKED BY ===== */
+.backed{
+    margin-top:100px;
+    padding:70px 20px;
+    text-align:center;
+    background:white;
+}
+
+.backed h3{
+    letter-spacing:5px;
+    color:#6C4CF1;
+    margin-bottom:40px;
+}
+
+.backed-logos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.backed-logos img{
+    height:60px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:#f2f2f2;
+    padding:50px 60px 20px;
+    margin-top:80px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.footer h3{
+    margin-bottom:15px;
+    color:#1f2d3d;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:8px;
+}
+
+.footer a{
+    text-decoration:none;
+    color:#6C4CF1;
+}
+
+.bottom{
+    margin-top:40px;
+    border-top:1px solid #ccc;
+    padding-top:15px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    font-size:14px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+        gap:12px;
+    }
+
+    .member-btn{
+        width:80%;
+        text-align:center;
+    }
+
+    .hero{
+        padding:80px 15px 50px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .float-box{
+        display:none;
+    }
+
+    .features{
+        flex-direction:column;
+        gap:20px;
+        font-size:18px;
+    }
+
+    .footer{
+        padding:40px 20px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+
+    .bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="logo-area">
+        <img src="https://www.amritaiedc.site/assets/2024/AVV-Kochi-Logo-New.png">
+        <img src="https://intranet.kh.amrita.edu/SIC/assets/images/brand/SIC_Logo.png">
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+        <a href="#" class="member-btn">Be a Member</a>
+    </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+
+    <div class="float-box float-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+    </div>
+
+    <div class="float-box float-right">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/330px-Vue.js_Logo_2.svg.png">
+    </div>
+
+    <h1>Build Better <span>Skill</span></h1>
+
+    <p>
+        Welcome to Software Innovators Club — an Initiative by
+        the Department of Computer Science and IT at Amrita
+        School of Computing, Kochi Campus.
+    </p>
+
+    <a href="#" class="join-btn">Join NOW</a>
+
+    <div class="features">
+        <div class="feature"><div class="check">✓</div>100+ Members</div>
+        <div class="feature"><div class="check">✓</div>Expert Guidance</div>
+        <div class="feature"><div class="check">✓</div>Resources</div>
+    </div>
+
+</section>
+
+<!-- ===== BACKED BY ===== -->
+<section class="backed">
+    <h3>BACKED BY</h3>
+    <div class="backed-logos">
+        <img src="https://intranet.kh.amrita.edu/SIC/assets/images/brand/iedc.png">
+        <img src="https://csi.coep.org.in/csi_logo.png">
+        <img src="https://www.amritaiedc.site/assets/2024/AVV-Kochi-Logo-New.png">
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div>
+            <h3>Clubs</h3>
+            <ul>
+                <li>IEDC</li>
+                <li>CSI</li>
+                <li>IIC</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Support</h3>
+            <ul>
+                <li>Join Community</li>
+                <li>Become a Member</li>
+                <li>FAQ’s</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Get in Touch</h3>
+            <p>Kochi, Kerala</p>
+            <p>Email: sicasaskochi@gmail.com</p>
+            <p>Phone: +91 6238314481</p>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <div>© 2026 SIC. All Rights Reserved</div>
+        <div>Developed by SIC Tech Team</div>
+    </div>
+</footer>
+
+</body>
+</html>
+
